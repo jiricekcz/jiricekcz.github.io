@@ -7,6 +7,7 @@
 import { Options, Vue } from 'vue-class-component';
 import Welcome from './components/Welcome.vue';
 import Languages from './components/Languages.vue';
+import './index.css'
 @Options({
   components: {
     Welcome,

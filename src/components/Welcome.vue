@@ -1,7 +1,7 @@
 
 
 <template>
-  <container>
+  <container class="bg-black">
     <h1>
       Hello, my name is <span class="name">{{ name }}</span
       >.
