@@ -1,4 +1,4 @@
-class LanguageManager extends Array<Language> {
+export class LanguageManager extends Array<Language> {
     constructor() {
         super();
     }
@@ -23,8 +23,14 @@ class LanguageManager extends Array<Language> {
     mostUsed(index = 0): Language {
         return this.usageSorted()[index];
     }
+    get(name: string): Language | null {
+        for (const l of this) {
+            if (l.name == name) return l;
+        }
+        return null;
+    }
 }
-class Language {
+export class Language {
     readonly name: string;
     readonly main: boolean;
     readonly order: number;
@@ -80,7 +86,7 @@ langs.push(new Language("Java", {
     order: 0,
     usage: 6
 }));
-class TimeEvent extends Date { 
+export class TimeEvent extends Date { 
     static readonly dob = new TimeEvent(1099263600000);
     constructor(time: number){ 
         super(time);
