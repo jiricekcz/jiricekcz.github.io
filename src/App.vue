@@ -1,16 +1,16 @@
 <template>
   <Welcome/>
+  <Languages/>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
 import Welcome from './components/Welcome.vue';
-
+import Languages from './components/Languages.vue';
 @Options({
   components: {
-    HelloWorld,
     Welcome,
+    Languages
   },
 })
 export default class App extends Vue {}
