@@ -1,7 +1,7 @@
 <template>
-  <container> 
+  <div> 
       <LanguageElement lang="C++"/>
-  </container>
+  </div>
 </template>
 <script lang="ts">
 import { Vue, Options } from "vue-class-component";

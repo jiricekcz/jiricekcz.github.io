@@ -15,7 +15,11 @@ export class LanguageManager extends Array<Language> {
         return rv;
     }
     timeSorted(): Array<Language> {
-        return this.sort((a, b) => a.order - b.order);
+        const a = this.sort((a, b) => a.order - b.order);
+        return a;
+    }
+    oldest(index = 0): Language {
+        return this.timeSorted()[index];
     }
     usageSorted(): Array<Language> {
         return this.sort((a, b) => a.usage - b.usage);
