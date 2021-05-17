@@ -13,12 +13,12 @@
 </template>
 <script lang="ts">
 import { Vue, Options } from "vue-class-component";
-import {name } from "../stat";
+import { name } from "../stat";
 @Options({
   props: {},
   components: {},
 })
 export default class Name extends Vue {
-    readonly name = name;
+  readonly name = name;
 }
 </script>
