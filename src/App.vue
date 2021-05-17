@@ -1,6 +1,6 @@
 <template>
   <Welcome/>
-  <Languages/>
+  <!-- <Languages/> -->
 </template>
 
 <script lang="ts">

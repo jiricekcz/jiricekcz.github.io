@@ -7,7 +7,7 @@
     >
       Hello, my name is
       <span class="text-6xl text-yellow-600">{{ name }}</span
-      >.
+      >
     </h1>
   </div>
 </template>

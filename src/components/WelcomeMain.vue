@@ -2,7 +2,7 @@
 
 <template>
   <div class="container flex flex-col">
-    <div class="py-1">
+    <div class="py-6">
       <Name />
     </div>
     <div class="py-16">
